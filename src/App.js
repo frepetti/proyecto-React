@@ -41,7 +41,7 @@ function App() {
                     {
                         mock.products.map( product => {
                             return(
-                                <Product />
+                                <Product name = {product.name} slashedPrice = {product.slashedPrice} price = {product.price} discount = {product.discount} installments = {product.installments} eta = {product.eta} delivery = {product.delivery} img = {product.img} />
                             )
                         })
                     }
