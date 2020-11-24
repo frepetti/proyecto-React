@@ -1,0 +1,36 @@
+.App-header {
+    background-color: #fff159;
+    height: 58px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    .logo{
+    width: 134px;
+    }
+    .searchBarCont{
+        border: 1px ;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+        position: relative;
+        right: 94px;
+        height: 39px;
+        .searchBar{
+            height: 100%;
+            width: 600px;
+            box-sizing: border-box;
+            border-radius: 2px;
+            border: 0 rgba(0,0,0,.2);
+            position: relative;
+            bottom: 5px;
+        }
+        .btn{
+            height: 39px;
+            outline: 0;
+            width: 46px;
+            background-color: #fff;
+            border: 0 rgba(0,0,0,.2);
+            border-left: 1px solid #e6e6e6;
+        }
+    }
+}
