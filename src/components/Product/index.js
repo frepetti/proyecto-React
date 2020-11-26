@@ -2,19 +2,13 @@ import React from 'react';
 import img1 from '../../resources/Desktop.jpg';
 import ProdData from './components/ProdData';
 
-const Product = () => {
+const Product = (props) => {
     return(
         <div className="product">
             <div className="prodImgCont">
-                <img src={product.img} alt="" id="prodImg" />
+                <img src={props.img} alt="" id="prodImg" />
             </div>
-            {
-                mock.products.map( product => {
-                    return(
-                        <ProdData name = {product.name} slashedPrice = {product.slashedPrice} price = {product.price} discount = {product.discount} installments = {product.installments} eta = {product.eta} delivery = {product.delivery} />
-                    )
-                })
-            }
+            <ProdData name = {props.name} slashedPrice = {props.slashedPrice} price = {props.price} discount = {props.discount} installments = {props.installments} eta = {props.eta} delivery = {props.delivery} />
         </div>
     )
 }

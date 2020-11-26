@@ -19,14 +19,59 @@ const mock = {
     ],
     products: [
         {
+            name: 'Desktop',
+            price: 18000,
+            installments: 3,
+            eta: 'Llega Gratis Mañana',
+            delivery: 'FULL',
+            img: img1
+        },
+        {
+            name: 'Desktop',
+            slashedPrice: 50000,
+            price: 40000,
+            discount: '20%',
+            installments: 18,
+            eta: 'Llega Gratis Mañana',
+            delivery: 'FULL',
+            img: img2
+        },
+        {
             name: 'Notebook',
             slashedPrice: 20000,
             price: 18000,
             discount: '20%',
             installments: 3,
             eta: 'Llega Gratis Mañana',
+            img: img3
+        },
+        {
+            name: 'Notebook',
+            slashedPrice: 20000,
+            price: 18000,
+            discount: '20%',
+            eta: 'Llega Gratis Mañana',
             delivery: 'FULL',
-            img: img1
+            img: img4
+        },
+        {
+            name: 'Notebook',
+            slashedPrice: 20000,
+            price: 18000,
+            discount: '20%',
+            installments: 3,
+            eta: 'Llega Gratis Mañana',
+            img: img5
+        },
+        {
+            name: 'CPU',
+            slashedPrice: 20000,
+            price: 18000,
+            discount: '20%',
+            installments: 3,
+            eta: 'Llega Gratis Mañana',
+            delivery: 'FULL',
+            img: img6
         }
     ]
 }
@@ -36,7 +81,7 @@ function App() {
         <div className="App">
             <Header />
             <div className="body">
-                <Sidebar />
+                <Sidebar name = {mock.categories}/>
                 <section className="prodGrid">
                     {
                         mock.products.map( product => {
